@@ -1,4 +1,7 @@
 /* сброс стилей браузера */
+
+
+
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
@@ -72,4 +75,21 @@ p {
 	padding-left: 8px;
 	border-top: 1px dashed #999;
 	clear: both;
+}
+figure img {
+	border: 1px solid #666;
+	background-color: #FFF;
+	padding: 4px;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+figcaption {
+	font: 1.1em Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin: 10px 0 0 0;
+}
+figure {
+	display: inline-block;
+	vertical-align: top;
+	width: 210px;
+	margin: 0 10px 10px 10px;
 }
