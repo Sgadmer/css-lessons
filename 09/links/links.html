@@ -5,7 +5,43 @@
 <title>Типографика CSS</title>
 <link href="main.css" rel="stylesheet">
 <style>
-
+a {
+  color: #207EBF;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #F60;
+}
+a:visited {color: #6E97BF;}
+a:hover {
+  color: #FFF; background-color: #6E97BF;border-bottom-color: #6E97BF;
+}
+a [href^="mailto:"]{
+  color: #666666;
+  border: none;
+  background: url(images/email.gif) no-repeat left center ;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.resources a{
+  border-bottom: none;
+  padding-right: 22px;
+}
+.resources a[href*='://'] {
+ background: url(images/globe.png) no-repeat right top;
+}
+.resources a[href$='.pdf'] {
+    background: url(images/acrobat.png) no-repeat right top;
+}
+.resources a[href$='.zip'] {
+    background: url(images/zip.png) no-repeat right top;
+}
+.resources a[href$='.doc'] {
+    background: url(images/word.png) no-repeat right top;
+}
+.resources a:hover {
+    color: #000;
+    background-color: rgba(255,255,255,.8);
+}
 
 </style>	
 </head>
@@ -19,10 +55,10 @@
 <h3>Ресурсы</h3>
 <ul>
   <li><a href="storage/report.pdf">Годовой отчет</a></li>
-  <li><a href="storage/template.doc">Корпоративный шаблон</a></li>
+  <li><a download="storage/template.doc" href="storage/template.doc">Корпоративный шаблон</a></li>
   <li><a href="storage/logos.zip">Корпоративный логотип</a></li>
   <li><a href="https://www.yahoo.com/">Дочерний корпоративный сайт</a></li>
-  <li><a href="https://www.google.com/">Открыть Google</a></li>
+  <li><a terget="_blank" href="https://www.google.com/">Открыть Google</a></li>
 </ul>
 </div>
 <h3>Esse quam nulla</h3>
