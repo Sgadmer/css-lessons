@@ -21,6 +21,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
 	line-height: 1.2;
 }
+.mainNav{
+	margin: 0 100px;
+	padding:0;
+	list-style:none;
+	border-right: none;
+}
+.mainNav li{
+	float: left;
+	width: 14em;
+}
+.mainNav li:last-of-type a {
+	border-right: 1px dashed #999;
+}
+
+.mainNav a{
+	color: #000;
+	font-size: 11px;
+	text-transform:uppercase;
+	text-decoration: none;
+	border: 1px dashed #999;
+	padding: 7px 5px 7px 30px;
+	display: block;
+	background-color: #e7e7e7;
+	background-image: url(images/nav.png);
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	text-align: center;
+
+}
 ol { 
 	padding-left: 1.4em;
 	list-style: decimal;
@@ -41,18 +70,66 @@ body {
 	padding: 20px;
 }
 
+.mainNav a:hover {font-weight: bold; background-color: #B2F511; background-position: 3px 50% ;}
 
+.home .homeLink{
+	background-color: #ffffff;
+	background-position: 3px 100%;
+	padding-right: 15px;
+	padding-left: 30px;
+    font-weight:bold;
+}
+.feature .featureLink{
+	background-color: #ffffff;
+	background-position: 3px 100%;
+	padding-right: 15px;
+	padding-left: 30px;
+    font-weight:bold;
+}
+.expert .expertLink{
+	background-color: #ffffff;
+	background-position: 3px 100%;
+	padding-right: 15px;
+	padding-left: 30px;
+    font-weight:bold;
+}
+.quiz .quizLink{
+	background-color: #ffffff;
+	background-position: 3px 100%;
+	padding-right: 15px;
+	padding-left: 30px;
+    font-weight:bold;
+}
+.project .projectLink{
+	background-color: #ffffff;
+	background-position: 3px 100%;
+	padding-right: 15px;
+	padding-left: 30px;
+    font-weight:bold;
+}
+.horoscope .horoscopeLink{
+	background-color: #ffffff;
+	background-position: 3px 100%;
+	padding-right: 15px;
+	padding-left: 30px;
+    font-weight:bold;
+}
+.quiz .quizLink:hover{
+	background-color: rgb(249, 80, 255);
+	font-weight:bold;
+	background-image: url(images/home.png);
+}
 
 </style>
 </head>
-<body>
-  <ul>
-    <li><a href="/index.html">Главная</a></li>
-    <li><a href="/features/">Сенсации</a></li>
-    <li><a href="/experts/">Экспертизы</a></li>
-    <li><a href="/quiz/">Мистификации</a></li>
-    <li><a href="/projects/">Проекты</a></li>
-    <li><a href="/horoscopes/">Гороскопы</a></li>
+<body class="quiz">
+  <ul class="mainNav">
+    <li><a href="/index.html" class="homeLink">Главная</a></li>
+    <li><a href="/features/" class="featureLink">Сенсации</a></li>
+    <li><a href="/experts/" class="expertLink">Экспертизы</a></li>
+    <li><a href="/quiz/" class="quizLink">Мистификации</a></li>
+    <li><a href="/projects/"class="projectLink">Проекты</a></li>
+    <li><a href="/horoscopes/"class="horoscopeLink">Гороскопы</a></li>
   </ul>
 </body>
 </html>
