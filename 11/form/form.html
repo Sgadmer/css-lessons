@@ -10,16 +10,16 @@
 </head>
 <body>
 <h1>Регистрация подписчика</h1>
-<form class="subform"  method="post" action="submit.html">
+<form class="subform"  method="post" onsubmit="test('dsddt'); return false;">
 	<p>
-		<label for="name">Как вас зовут?</label>
+		<label for="name" class="label">Как вас зовут?</label>
 		<input type="text" name="name" id="name">
 	</p>
 	<p>
-		<label for="email">Ваш адрес электронной почты</label>
+		<label for="email" class="label">Ваш адрес электронной почты</label>
 		<input type="text" name="email" id="email">
 	</p>
-	<p>Навыки квартирного ремонта
+	<p><span class="label">Навыки квартирного ремонта</span>
 		<label>
 			<input name="skill" type="radio" value="novice">
 			Новичок</label>
@@ -31,7 +31,7 @@
 			Профи</label>
 	</p>
 	<p>
-		<label for="refer">Откуда вы узнали о нас? </label>
+		<label for="refer" class="label">Откуда вы узнали о нас? </label>
 		<select name="refer" id="refer">
 			<option value="null">Выберите вариант</option>
 			<option value="1">От друзей</option>
@@ -41,12 +41,20 @@
 		</select>
 	</p>
 	<p>
-		<label for="comments">Дополнительные комментарии </label>
+		<label for="comments" class="label">Дополнительные комментарии </label>
 		<textarea name="comments" cols="35" rows="4" id="comments"></textarea>
 	</p>
 	<p>
 		<input type="submit" value="Подписаться">
 	</p>
 </form>
+
+<script>
+	function test(text){
+		console.log(text);
+		return false;
+	}
+
+	</script>
 </body>
 </html>
