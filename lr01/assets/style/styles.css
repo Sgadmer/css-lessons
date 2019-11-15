@@ -1,5 +1,4 @@
 body {
-
     font-style: normal;
     font-weight: normal; 
 }
@@ -95,6 +94,7 @@ body {
     height: 16px;
     width: 16px;
     align-self: center;
+    margin-left:25px;
 }
 
 .notification{
@@ -170,14 +170,8 @@ ul.nav-list1 li.active {
    
 }
 
-ul.nav-list1 li:hover {
-    padding-left: 7px;
-    padding-right: 7px;
-    margin-left:5px;
-    font-weight: bold;
-    padding-bottom: 10px;
-    border-bottom: 5px solid #4285F4;
-   
+ul.nav-list1 li:hover, ul.nav-list2 li:hover {
+    border-bottom: 1px solid #4285F4;
 }
 
 ul.nav-list2 li:nth-child(2) {
@@ -193,15 +187,23 @@ ul.nav-list2 li:nth-child(2) {
    background: #fcfcfc; 
    padding-top: 44px;
    padding-bottom: 45px;
+   width:100%;
 }
+
+.layout-center2{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*______________FIRST COLUMN________________*/
 
 .first-column{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding-left: 45px;
 }
-
 
 .card{
     width: 320px;
@@ -212,6 +214,7 @@ ul.nav-list2 li:nth-child(2) {
     margin-bottom:22px;
     padding: 26px 24px 22px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .card-header{
@@ -223,6 +226,9 @@ ul.nav-list2 li:nth-child(2) {
     line-height: 22px;  
     padding-bottom: 21px;  
 }
+.card2{
+    margin-bottom:26px;
+}
 
 .a{
     font-family: Lato;
@@ -231,6 +237,9 @@ ul.nav-list2 li:nth-child(2) {
     font-size: 15px;
     line-height: 21px;
     color: #4885ED;
+    display: inline-block;
+    margin-bottom: 8px;
+    cursor:pointer;
 }
 
 .p {
@@ -256,6 +265,8 @@ ul.nav-list2 li:nth-child(2) {
     letter-spacing: 0.8px;
     color: #39912E;
     margin-left:10px;
+    display: inline-block;
+    margin-bottom: 8px;
 }
 
 .wiki{
@@ -268,3 +279,136 @@ ul.nav-list2 li:nth-child(2) {
     letter-spacing: 0.8px;
     color: #4E4E4E;
     }
+
+.wiki-position{
+    position:absolute; 
+	bottom:22px;
+    }
+
+
+.flight {
+    background: #4285F4;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.138162);
+    border-radius: 4px;
+    padding: 20px 30px 21px 24px;
+    width:320px;
+    height:120px;
+    box-sizing: border-box;   
+}
+
+.flight-hotel-header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-bottom:14.5px;
+}
+
+.pos{
+    position: relative;
+    top:5px;
+
+}
+
+.bottom-img{
+    margin-right:16.08px;
+}
+
+.flight-hotel-article{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px; 
+    color: #FFFFFF;
+}
+
+/*______________MAIN COLUMN________________*/
+
+.main-column{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+
+.amsterdam{
+    width:664px;
+    height:154px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.138162);
+    border-radius: 4px; 
+    margin-top:-6px;
+    padding:18px 25px 20px 25px;
+    box-sizing: border-box;
+}
+
+.fig-caption-btns{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #212121;
+    width:214.5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+
+.visit,.save,.share{
+    position: relative;
+    top:3px;
+    margin-right:7.5px;
+}
+
+
+.arrow{
+    position: relative;
+    top:4px;
+    left:105.5px;
+    height:12px;
+    width:12px;
+}
+
+.arrow-btn{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom:18px;
+    right:21px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #212121;
+    cursor: pointer;
+}
+
+.amstardam-inf{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4E4E4E;
+    margin-bottom:8px;
+}
+
+#close{
+    position: absolute;
+    top: 17px;
+    left:21px;
+}
+
+.close1{
+    position: relative;
+}
+
+.cursor{
+    cursor:pointer;
+}
