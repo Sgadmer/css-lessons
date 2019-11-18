@@ -4,8 +4,22 @@ body {
 }
 
 .layout-center{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.layout-center2{
     max-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.layout-center3{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 /*______________HEADER________________*/
@@ -190,13 +204,11 @@ ul.nav-list2 li:nth-child(2) {
    width:100%;
 }
 
-.layout-center2{
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
 
+
+.columns{
+    margin-bottom:26px;
+}
 
 
 /*______________FIRST COLUMN________________*/
@@ -227,7 +239,7 @@ ul.nav-list2 li:nth-child(2) {
     padding-bottom: 21px;  
 }
 .card2{
-    margin-bottom:26px;
+    margin-bottom:0px;
 }
 
 .a{
@@ -286,15 +298,6 @@ ul.nav-list2 li:nth-child(2) {
     }
 
 
-.flight {
-    background: #4285F4;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.138162);
-    border-radius: 4px;
-    padding: 20px 30px 21px 24px;
-    width:320px;
-    height:120px;
-    box-sizing: border-box;   
-}
 
 .flight-hotel-header {
     font-family: Lato;
@@ -411,4 +414,150 @@ ul.nav-list2 li:nth-child(2) {
 
 .cursor{
     cursor:pointer;
+}
+
+.big-image{
+    border-radius: 5px 5px 0px 0px;
+}
+
+/*______________SECOUND COLUMN________________*/
+
+
+.second-column{
+    margin-right: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.map {
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.138162);
+    max-width:320px;
+    max-height: 260px;
+}
+
+.weather{
+    position: relative;
+    font-family: Lato;
+    font-style: normal;
+    margin-left:-3px;
+    max-width:320px;
+    max-height: 260px;
+  }
+
+ .weather-info{
+     position: absolute;
+     top:2px;
+     padding: 24px 20px;
+     box-sizing: border-box;
+     height:260px;
+     width:320px;
+ }
+ .high-weather-row{
+     display:flex;
+     justify-content: space-between;
+ }
+
+ #weather-name{
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.232143px;
+    color: #212121;
+ }
+
+ .button{
+     background-color: transparent;
+     box-sizing: content-box;
+     padding:0;
+     border:none;
+     cursor:pointer;
+     outline: none;
+ }
+ .degrees{
+     background-color: transparent;
+     width:130px;
+     font-weight: 300;
+     font-size: 66px;
+     line-height: 79px;
+     text-align: left;
+     letter-spacing: 0.232143px;
+     color: #212121;
+     position: relative;
+     margin-bottom:20px;
+ }
+
+ #celsius{
+    width:20px;
+    height:20px;
+    background-color: transparent;
+    border: 2px solid #212121;
+    box-sizing: border-box;
+    border-radius: 50px;
+    position: absolute;
+    top:15px;
+    left:81px;
+ }
+
+ .day{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.232143px;
+    color: #212121;
+    position:relative;
+ }
+
+ .day-weather{
+     display: flex;
+     justify-content: space-between;
+     width: 50px;
+     max-width: 70px;
+ }
+
+ .middle{
+     align-self: flex-start;
+ }
+
+ .time{
+     display:flex;
+     justify-content: space-between;
+     position: relative;
+     bottom:-60px;
+     font-size: 13px;
+     line-height: 16px;
+     text-align: center;
+     letter-spacing: 0.232143px;
+     color: #212121;
+ }
+
+ #time
+ {
+     position: absolute;
+     top:24px;
+     left:67px;
+ }
+
+
+ .position{
+     position: relative;
+ }
+
+/*______________BOTTOM ROW CONTAINER________________*/
+
+.bottom-row
+{
+
+}
+
+
+.flight {
+    background: #4285F4;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.138162);
+    border-radius: 4px;
+    padding: 20px 30px 21px 24px;
+    width:320px;
+    height:120px;
+    box-sizing: border-box;   
+    margin-left:45px;
 }
