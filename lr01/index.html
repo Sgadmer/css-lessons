@@ -7,6 +7,7 @@
     <link href="assets/style/styles.css" rel="stylesheet">
     <link href="assets/style/reset.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -42,7 +43,7 @@
     <div class="nav-container">
         <section class="layout-center">
             <nav class="nav">
-                <a class="navbar1">
+                <div class="navbar1">
                     <ul type="none" class="nav-list1">
                         <li type="button" class="active">Glance</li>
                         <li type="button">All</li>
@@ -52,13 +53,13 @@
                         <li type="button">Maps</li>
                         <li type="button">More</li>
                     </ul>
-                </a>
-                <a class="navbar2">
+                </div>
+                <div class="navbar2">
                     <ul type="none" class="nav-list2">
                         <li type="button">Settings</li>
                         <li type="button">Tools</li>
                     </ul>
-                </a>
+                </div>
             </nav>
         </section>
     </div>
@@ -66,7 +67,6 @@
     <div class="content">
         <div class="columns">
             <div class="layout-center2">
-
                 <div class="first-column">
                     <div class="card">
                         <h1 class="card-header">Top Results</h1>
@@ -77,6 +77,10 @@
                             work, invest and do business in the Amsterdam
                             Metropolitan Area.</p>
                         <a class="link cursor">https://www.iamsterdam.com/</a>
+                        <div id="dots">
+                            <img class="cursor" src="assets/images/Group 5.png">
+                        </div>
+
                     </div>
                     <div class="card card2">
                         <h1 class="card-header cursor">About Amsterdam</h1>
@@ -129,17 +133,17 @@
                                 <ul class="day" type="none">
                                     <li>Today</li>
                                 </ul>
-                                <button class="button middle" id="day-change">
+                                <button class="button middle">
                                     <img src="assets/images/Path.png">
                                 </button>
                             </div>
                             <div class="position">
                                 <ul class="time" type="none">
-                                    <li>09:00</li>
-                                    <li>12:00</li>
-                                    <li>15:00</li>
-                                    <li>18:00</li>
-                                    <li>21:00</li>
+                                    <li class="cursor">09:00</li>
+                                    <li class="cursor">12:00</li>
+                                    <li class="cursor">15:00</li>
+                                    <li class="cursor">18:00</li>
+                                    <li class="cursor">21:00</li>
                                 </ul>
                                 <img src="assets/images/scrubber.png" id="time">
                             </div>
@@ -148,18 +152,62 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-row">
-            <div class="layout-center3">
-                <div class="flight">
+        <div class="layout-center3">
+            <div class="bottom-row">
+                <div class="flight flight-hotel-translator-card">
                     <img class="bottom-img pos cursor" src="assets/images/flight - material.png">
                     <h1 class="flight-hotel-header cursor">Flights</h1>
                     <p class="flight-hotel-article"> 1 h 10 min flight, from €174</p>
                     <p class="flight-hotel-article">4h 30 min 1 stop flight, from €207</p>
                 </div>
+                <div class="hotel flight-hotel-translator-card">
+                    <img class="bottom-img cursor" src="assets/images/hotel - material.png">
+                    <h1 class="flight-hotel-header cursor">Hotels</h1>
+                    <p class="flight-hotel-article">3-star hotel averaging €133</p>
+                    <p class="flight-hotel-article">5-star averaging €290</p>
+                </div>
+                <div class="translator flight-hotel-translator-card">
+                    <div class="eng-translator">
+                        <div>
+                            <div class="top-trans-row">
+                                <ul class="language" type="none">
+                                    <li>English</li>
+                                    <button class="button" id="lang-change">
+                                        <img src="assets/images/Path.png">
+                                    </button>
+                                </ul>
+                                <div class="top-lang-btns-first">
+                                    <button class="button"><img src="assets/images/actions_speak.png"></button>
+                                    <button class="button"><img src="assets/images/actions_listen.png"></button>
+                                    <button class="button"><img src="assets/images/actions_change.png"></button>
+                                </div>
+                            </div>
+                            <input class="trans-input" type="text">
+                            </input>
+                        </div>
+                    </div>
+                    <div class="dutch-trans">
+                        <div class="top-trans-row">
+                            <ul class="language" type="none">
+                                <li>Dutch</li>
+                                <button class="button" id="lang-change">
+                                    <img src="assets/images/Path.png">
+                                </button>
+                            </ul>
+                            <div class="top-lang-btns-second">
+                                <button class="button"><img src="assets/images/actions_speak.png"></button>
+                                <button class="button"><img src="assets/images/actions_listen.png"></button>
+                            </div>
+                        </div>
+                        <input class="trans-input" type="text">
+                        </input>
+                        <p id="Google-translate"> Open in Google Translate</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
+
 </body>
 
 </html>
