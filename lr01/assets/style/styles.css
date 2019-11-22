@@ -232,6 +232,9 @@ ul.nav-list2 li:nth-child(2) {
     box-sizing: border-box;
     position: relative;
 }
+.first-column > .card:nth-child(2){
+     margin-bottom:0px;
+}
 
 .card-header{
     font-family: 'Lato';
@@ -249,9 +252,9 @@ ul.nav-list2 li:nth-child(2) {
    margin-top:9px;
 }
 
-.card2{
+/* .card2{
     margin-bottom:0px;
-}
+} */
 
 .a{
     font-family: Lato;
@@ -509,6 +512,9 @@ ul.nav-list2 li:nth-child(2) {
      letter-spacing: 0.232143px;
      color: #212121;
  }
+ ul.time {
+    list-style:none;
+ }
 
  #time
  {
@@ -571,6 +577,8 @@ ul.nav-list2 li:nth-child(2) {
     min-width:320px;
     min-height:120px;
     box-sizing: border-box;   
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 
@@ -602,18 +610,19 @@ ul.nav-list2 li:nth-child(2) {
 .top-trans-row{
     display: flex;
     justify-content: space-between;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.language{
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 19px;
     color: #4E4E4E;
-    position: relative;
-    margin-bottom: 14px;
-}
-
-.language{
-    position: relative;
+    outline: none;
+    border:none;
 }
 
 
